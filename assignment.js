@@ -3,7 +3,7 @@ let sum=0
 for (let i=0; i<=N; i++){
     sum=sum+i
 }
-console.log(`sum of 1 to ${N} is ` , sum)
+console.log(`sum of 1 to ${N} is` , sum)
 
 
 console.log("--------------")
@@ -86,3 +86,21 @@ for(let i=A; i<=B; i++){
  console.log("The Odd numbers are:", Odd)
 }
 oddNumbers(1,10)
+
+
+console.log("--------------")
+
+const integer = [1, 3, 6, 7, 3, 1, 3];
+const count = {};
+
+for (let i = 0; i < integer.length; i++) {
+  if (count[integer[i]] === undefined) {
+    count[integer[i]] = 1;
+  } else {
+    count[integer[i]]++;
+  }
+}
+
+console.log(count);
+// {1: 2, 3: 3, 6: 1, 7: 1}
+
